@@ -10,9 +10,11 @@
   "scripts": {
     "dev": "node scripts/dev.js",
     "dev:vite": "vite",
+    "typecheck": "tsc --noEmit",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start": "node bin/cli.js"
+    "start": "node bin/cli.js",
+    "test": "npm run typecheck && node --test test/*.test.mjs"
   },
   "keywords": [
     "screen-recorder",
@@ -25,8 +27,16 @@
     "devtools",
     "open-source"
   ],
-  "author": "Open Source Community",
+  "author": "md1qamar",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md1qamar/bugcast.git"
+  },
+  "homepage": "https://github.com/md1qamar/bugcast#readme",
+  "bugs": {
+    "url": "https://github.com/md1qamar/bugcast/issues"
+  },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
     "gifenc": "^1.0.3",
