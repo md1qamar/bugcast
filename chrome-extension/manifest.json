@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "BugCast Bridge",
+  "version": "2.0.0",
+  "description": "1-click stream console errors and failed HTTP requests from any browser tab into your local BugCast Studio.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "BugCast Console Bridge"
+  }
+}

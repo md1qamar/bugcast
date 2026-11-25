@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BugCast Bridge</title>
+    <style>
+      body {
+        width: 300px;
+        margin: 0;
+        padding: 14px;
+        background: #0b0f17;
+        color: #f1f5f9;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      p {
+        font-size: 11px;
+        color: #94a3b8;
+        margin: 0 0 12px;
+        line-height: 1.4;
+      }
+      label {
+        display: block;
+        font-size: 11px;
+        color: #cbd5e1;
+        margin-bottom: 4px;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 7px 9px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: #111827;
+        color: #fff;
+        font-family: monospace;
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 9px 12px;
+        border: 0;
+        border-radius: 8px;
+        background: #22c55e;
+        color: #052e16;
+        font-weight: 700;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #4ade80;
+      }
+      .status {
+        margin-top: 10px;
+        font-size: 11px;
+        font-family: monospace;
+        color: #86efac;
+        min-height: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BugCast Bridge</h1>
+    <p>Attach BugCast's console &amp; HTTP failure capture directly to the active tab without editing any code.</p>
+    <label for="endpoint">BugCast Server URL</label>
+    <input id="endpoint" type="text" value="http://127.0.0.1:4173" />
+    <button id="attach">Attach to Active Tab</button>
+    <div id="status" class="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
